@@ -1,0 +1,12 @@
+<!-- card-tempo.component.html -->
+<div class="h-full w-full rounded-lg backdrop-blur-md bg-black/10 flex flex-col items-center justify-center">
+    <div class="flex flex-col items-center text-white">
+        <h1>{{ response?.city }}</h1>
+        <h1 class="text-7xl m-0">{{ convertToCelsius(response?.temp) }}°</h1>
+        <h1 class="text-3xl">{{ convertToCelsius(response?.tempMax) }}°/{{ convertToCelsius(response?.tempMin) }}°</h1>
+    </div>
+    <div class="w-3/5 text-white flex flex-col items-center justify-center">
+        <h3 class="p-0 m-0">{{ response?.main }}</h3>
+        <h3 class="p-0 m-0">{{ convertToCelsius(response?.tempSens) }}°</h3>
+    </div>
+</div>
